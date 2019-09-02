@@ -10,6 +10,7 @@ global:
 before_install: 
 - cd decide
 install: 
+- pip freeze > requirements.txt
 - pip install -r ../requirements.txt
 before_script: 
 - cp local_settings.travis.py local_settings.py
