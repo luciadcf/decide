@@ -161,3 +161,9 @@ except ImportError:
 django_heroku.settings(locals())
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+
+BASEURL = 'https://decide-renamed.herokuapp.com/'
+
+APIS = {}
+
+django_heroku.settings(locals())
